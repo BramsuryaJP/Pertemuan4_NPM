@@ -23,12 +23,14 @@ const rl = readline.createInterface({
 // membuat variable global untuk menampung input dari user
 let inputName, inputEmail, inputPhoneNumber;
 
-rl.question('What is your name ? ', (name) => {
-  // menampung input kedalam variable
-  inputName = name;
-  // memanggil fungsi selanjutnya
-  getPhoneNumber();
-});
+function getName() {
+  rl.question('What is your name ? ', (name) => {
+    // menampung input kedalam variable
+    inputName = name;
+    // memanggil fungsi selanjutnya
+    getPhoneNumber();
+  });
+}
 
 function getPhoneNumber() {
   rl.question('Input your phone number : ', (phoneNumber) => {   
@@ -64,3 +66,6 @@ function getEmail() {
     }
   });
 }
+
+// memanggil fungsi pertama yang dijalankan
+getName();
