@@ -1,18 +1,10 @@
-
+// core modules
 // file system
-const fs = require('fs');
-
-//readine
+// const fs = require('fs');
+//readline
 const readline = require('readline');
-
 // validator
 const validator = require('validator');
-
-// // validator email
-// console.log(validator.isEmail('brmsurya0304@gmail.com'));
-
-// // validator nomor telepon
-// console.log(validator.isMobilePhone('089685134266', 'id-ID'));
 
 // readline
 const rl = readline.createInterface({
