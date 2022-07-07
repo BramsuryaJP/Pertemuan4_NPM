@@ -27,17 +27,17 @@ rl.question('What is your name ? ', (name) => {
   // menampung input kedalam variable
   inputName = name;
   // memanggil fungsi selanjutnya
-  getMobilePhone();
+  getPhoneNumber();
 });
 
-function getMobilePhone() {
+function getPhoneNumber() {
   rl.question('Input your phone number : ', (phoneNumber) => {   
     // melakukan validasi terhadap input user 
     if (!validator.isMobilePhone(phoneNumber, 'id-ID')) {
       // pesan validasi
       console.log('Nomor Telepon Tidak Valid')
       // mengulang fungsi
-      getMobilePhone();
+      getPhoneNumber();
     } else {
       // menampung input kedalam variable
       inputPhoneNumber = phoneNumber;
